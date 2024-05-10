@@ -10,7 +10,6 @@
     let files = [];
     let filename = "";
     let newBuilding = {};
-    //$: console.log (blob);
 
     function parseFile() {
         let file = files[0];
@@ -35,9 +34,7 @@
 
     function encodeBlob() {
         decBlob = JSON.stringify(jsonDOM);
-        //console.log(decBlob);
         blob = btoa(decBlob);
-        //console.log(blob);
     }
 
     function saveBlob() {
@@ -58,7 +55,6 @@
         let total = 0;
         for (const building in parcel.buildings) {
             total = total + parcel.buildings[building];
-            //console.log (total);
         }
         return total;
     }

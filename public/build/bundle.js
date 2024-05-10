@@ -2061,7 +2061,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (127:0) {#if jsonDOM}
+    // (123:0) {#if jsonDOM}
     function create_if_block(ctx) {
     	let iframe;
     	let t0;
@@ -2139,11 +2139,11 @@ var app = (function () {
     			create_component(collapsiblesection.$$.fragment);
     			attr_dev(iframe, "id", "my_iframe");
     			set_style(iframe, "display", "none");
-    			add_location(iframe, file, 127, 4, 3865);
-    			add_location(h10, file, 128, 4, 3925);
-    			add_location(h11, file, 158, 4, 5661);
-    			add_location(br0, file, 169, 4, 6243);
-    			add_location(br1, file, 169, 10, 6249);
+    			add_location(iframe, file, 123, 4, 3736);
+    			add_location(h10, file, 124, 4, 3796);
+    			add_location(h11, file, 154, 4, 5532);
+    			add_location(br0, file, 165, 4, 6114);
+    			add_location(br1, file, 165, 10, 6120);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, iframe, anchor);
@@ -2257,14 +2257,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(127:0) {#if jsonDOM}",
+    		source: "(123:0) {#if jsonDOM}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (136:16) {#each allBuildings as building}
+    // (132:16) {#each allBuildings as building}
     function create_each_block_4(ctx) {
     	let option;
     	let t_value = /*building*/ ctx[35].name + "";
@@ -2277,7 +2277,7 @@ var app = (function () {
     			option.__value = /*building*/ ctx[35].id;
     			option.value = option.__value;
     			set_style(option, "background-image", "url(icons/" + /*building*/ ctx[35].id + "-48.png)");
-    			add_location(option, file, 136, 20, 4486);
+    			add_location(option, file, 132, 20, 4357);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -2293,14 +2293,14 @@ var app = (function () {
     		block,
     		id: create_each_block_4.name,
     		type: "each",
-    		source: "(136:16) {#each allBuildings as building}",
+    		source: "(132:16) {#each allBuildings as building}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (140:12) {#each Object.entries(parcel.buildings) as [name, qty]}
+    // (136:12) {#each Object.entries(parcel.buildings) as [name, qty]}
     function create_each_block_3(ctx) {
     	let button0;
     	let t1;
@@ -2349,17 +2349,17 @@ var app = (function () {
     			t10 = space();
     			br = element("br");
     			attr_dev(button0, "class", "btn btn__primary");
-    			add_location(button0, file, 140, 16, 4735);
+    			add_location(button0, file, 136, 16, 4606);
     			attr_dev(button1, "class", "btn btn__primary");
-    			add_location(button1, file, 141, 16, 4833);
+    			add_location(button1, file, 137, 16, 4704);
     			if (!src_url_equal(img.src, img_src_value = "icons/" + /*name*/ ctx[28] + "-48.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = allBuildings.filter(func)[0].name);
     			attr_dev(img, "height", "24");
     			attr_dev(img, "width", "24");
-    			add_location(img, file, 142, 16, 4931);
+    			add_location(img, file, 138, 16, 4802);
     			attr_dev(button2, "class", "btn btn__danger");
-    			add_location(button2, file, 144, 16, 5132);
-    			add_location(br, file, 145, 16, 5237);
+    			add_location(button2, file, 140, 16, 5003);
+    			add_location(br, file, 141, 16, 5108);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button0, anchor);
@@ -2453,14 +2453,14 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(140:12) {#each Object.entries(parcel.buildings) as [name, qty]}",
+    		source: "(136:12) {#each Object.entries(parcel.buildings) as [name, qty]}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (152:12) {:else}
+    // (148:12) {:else}
     function create_else_block(ctx) {
     	let t;
     	let br;
@@ -2469,7 +2469,7 @@ var app = (function () {
     		c: function create() {
     			t = text("None");
     			br = element("br");
-    			add_location(br, file, 152, 20, 5552);
+    			add_location(br, file, 148, 20, 5423);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -2486,14 +2486,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(152:12) {:else}",
+    		source: "(148:12) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (149:12) {#each Object.entries(parcel.outputValues) as [name, type]}
+    // (145:12) {#each Object.entries(parcel.outputValues) as [name, type]}
     function create_each_block_2(ctx) {
     	let t0_value = /*name*/ ctx[28] + "";
     	let t0;
@@ -2516,8 +2516,8 @@ var app = (function () {
     			button.textContent = "Remove";
     			br = element("br");
     			attr_dev(button, "class", "btn btn__danger");
-    			add_location(button, file, 150, 16, 5420);
-    			add_location(br, file, 150, 101, 5505);
+    			add_location(button, file, 146, 16, 5291);
+    			add_location(br, file, 146, 101, 5376);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -2564,14 +2564,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(149:12) {#each Object.entries(parcel.outputValues) as [name, type]}",
+    		source: "(145:12) {#each Object.entries(parcel.outputValues) as [name, type]}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (131:4) <CollapsibleSection headerText='{parcel.id} ({parcel.parcelType}) - Max Buildings: {totalBuildings(parcel)}/{parcel.maxBuildings}' >
+    // (127:4) <CollapsibleSection headerText='{parcel.id} ({parcel.parcelType}) - Max Buildings: {totalBuildings(parcel)}/{parcel.maxBuildings}' >
     function create_default_slot_2(ctx) {
     	let div;
     	let t0;
@@ -2659,18 +2659,18 @@ var app = (function () {
     			t7 = space();
     			br2 = element("br");
     			attr_dev(button, "class", "btn btn__primary");
-    			add_location(button, file, 132, 22, 4186);
+    			add_location(button, file, 128, 22, 4057);
     			option.__value = "";
     			option.value = option.__value;
-    			add_location(option, file, 134, 16, 4370);
+    			add_location(option, file, 130, 16, 4241);
     			attr_dev(select, "name", "newBuilding");
     			if (/*newBuilding*/ ctx[6][/*parcel*/ ctx[26].id] === void 0) add_render_callback(select_change_handler);
-    			add_location(select, file, 133, 12, 4289);
-    			add_location(br0, file, 138, 21, 4644);
-    			add_location(br1, file, 147, 20, 5284);
-    			add_location(br2, file, 154, 12, 5591);
+    			add_location(select, file, 129, 12, 4160);
+    			add_location(br0, file, 134, 21, 4515);
+    			add_location(br1, file, 143, 20, 5155);
+    			add_location(br2, file, 150, 12, 5462);
     			attr_dev(div, "class", "content");
-    			add_location(div, file, 131, 8, 4141);
+    			add_location(div, file, 127, 8, 4012);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2837,14 +2837,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(131:4) <CollapsibleSection headerText='{parcel.id} ({parcel.parcelType}) - Max Buildings: {totalBuildings(parcel)}/{parcel.maxBuildings}' >",
+    		source: "(127:4) <CollapsibleSection headerText='{parcel.id} ({parcel.parcelType}) - Max Buildings: {totalBuildings(parcel)}/{parcel.maxBuildings}' >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (130:4) {#each parcelDOM as parcel, index (parcel.id)}
+    // (126:4) {#each parcelDOM as parcel, index (parcel.id)}
     function create_each_block_1(key_1, ctx) {
     	let first;
     	let collapsiblesection;
@@ -2902,14 +2902,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(130:4) {#each parcelDOM as parcel, index (parcel.id)}",
+    		source: "(126:4) {#each parcelDOM as parcel, index (parcel.id)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (161:8) <CollapsibleSection headerText={connection.id}>
+    // (157:8) <CollapsibleSection headerText={connection.id}>
     function create_default_slot_1(ctx) {
     	let div;
     	let t0_value = /*connection*/ ctx[23].id + "";
@@ -2947,12 +2947,12 @@ var app = (function () {
     			br1 = element("br");
     			t8 = text("\r\n                Resource: ");
     			t9 = text(t9_value);
-    			add_location(br0, file, 162, 32, 5917);
+    			add_location(br0, file, 158, 32, 5788);
     			attr_dev(button, "class", "btn btn__danger");
-    			add_location(button, file, 164, 16, 6014);
-    			add_location(br1, file, 164, 118, 6116);
+    			add_location(button, file, 160, 16, 5885);
+    			add_location(br1, file, 160, 118, 5987);
     			attr_dev(div, "class", "content");
-    			add_location(div, file, 161, 12, 5862);
+    			add_location(div, file, 157, 12, 5733);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -3003,14 +3003,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(161:8) <CollapsibleSection headerText={connection.id}>",
+    		source: "(157:8) <CollapsibleSection headerText={connection.id}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (160:4) {#each connectionDOM.filter((c)=>c.id.substring(0,6) === "xyflow") as connection, index (connection.id)}
+    // (156:4) {#each connectionDOM.filter((c)=>c.id.substring(0,6) === "xyflow") as connection, index (connection.id)}
     function create_each_block(key_1, ctx) {
     	let first;
     	let collapsiblesection;
@@ -3068,14 +3068,14 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(160:4) {#each connectionDOM.filter((c)=>c.id.substring(0,6) === \\\"xyflow\\\") as connection, index (connection.id)}",
+    		source: "(156:4) {#each connectionDOM.filter((c)=>c.id.substring(0,6) === \\\"xyflow\\\") as connection, index (connection.id)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (171:4) <CollapsibleSection headerText="Full JSON">
+    // (167:4) <CollapsibleSection headerText="Full JSON">
     function create_default_slot(ctx) {
     	let t_value = (/*decBlob*/ ctx[1] && /*decBlob*/ ctx[1]) + "";
     	let t;
@@ -3099,7 +3099,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(171:4) <CollapsibleSection headerText=\\\"Full JSON\\\">",
+    		source: "(167:4) <CollapsibleSection headerText=\\\"Full JSON\\\">",
     		ctx
     	});
 
@@ -3155,21 +3155,21 @@ var app = (function () {
     			if (if_block) if_block.c();
     			if_block_anchor = empty();
     			attr_dev(input, "type", "file");
-    			add_location(input, file, 116, 8, 3426);
+    			add_location(input, file, 112, 8, 3297);
     			attr_dev(button0, "class", "btn btn__primary");
     			button0.disabled = button0_disabled_value = /*files*/ ctx[5].length === 0;
-    			add_location(button0, file, 116, 45, 3463);
-    			add_location(br0, file, 116, 144, 3562);
+    			add_location(button0, file, 112, 45, 3334);
+    			add_location(br0, file, 112, 144, 3433);
     			attr_dev(textarea, "rows", "20");
     			attr_dev(textarea, "cols", "80");
-    			add_location(textarea, file, 118, 0, 3589);
+    			add_location(textarea, file, 114, 0, 3460);
     			attr_dev(button1, "class", "btn btn__primary");
     			button1.disabled = button1_disabled_value = /*blob*/ ctx[0].length === 0;
-    			add_location(button1, file, 119, 0, 3637);
+    			add_location(button1, file, 115, 0, 3508);
     			attr_dev(button2, "class", "btn btn__primary");
     			button2.disabled = button2_disabled_value = !/*jsonDOM*/ ctx[2];
-    			add_location(button2, file, 122, 0, 3744);
-    			add_location(br1, file, 125, 0, 3840);
+    			add_location(button2, file, 118, 0, 3615);
+    			add_location(br1, file, 121, 0, 3711);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3296,7 +3296,7 @@ var app = (function () {
 
     	for (const building in parcel.buildings) {
     		total = total + parcel.buildings[building];
-    	} //console.log (total);
+    	}
 
     	return total;
     }
@@ -3315,7 +3315,6 @@ var app = (function () {
     	let filename = "";
     	let newBuilding = {};
 
-    	//$: console.log (blob);
     	function parseFile() {
     		let file = files[0];
     		filename = file.name;
@@ -3349,10 +3348,8 @@ var app = (function () {
 
     	function encodeBlob() {
     		$$invalidate(1, decBlob = JSON.stringify(jsonDOM));
-
-    		//console.log(decBlob);
     		$$invalidate(0, blob = btoa(decBlob));
-    	} //console.log(blob);
+    	}
 
     	function saveBlob() {
     		encodeBlob();
@@ -3540,16 +3537,34 @@ var app = (function () {
     /* src\App.svelte generated by Svelte v3.59.2 */
 
     function create_fragment(ctx) {
+    	let blobreader;
+    	let current;
+    	blobreader = new BlobReader({ $$inline: true });
+
     	const block = {
-    		c: noop,
+    		c: function create() {
+    			create_component(blobreader.$$.fragment);
+    		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
-    		m: noop,
+    		m: function mount(target, anchor) {
+    			mount_component(blobreader, target, anchor);
+    			current = true;
+    		},
     		p: noop,
-    		i: noop,
-    		o: noop,
-    		d: noop
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(blobreader.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(blobreader.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(blobreader, detaching);
+    		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
